@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display+SC:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image:url(/imagenes/fondo.jpg);
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+.edad-form{
+    position: absolute;
+    top: 20%;
+    width: 50%;
+    padding: 1.9rem 1.2rem;
+    text-align: center;
+    background: #2a2b38;
+    border-radius: 20px;
+    box-shadow: -8px 8px 10px 0 rgba(0, 0, 0, 0.514);
+}
+.texto{
+    color: #f5f5f5;
+    font-weight: bold;
+    font-family: 'Playfair Display SC', serif;
+}
+.texto2{
+    color: #f5f5f5;
+    font-weight:lighter;
+    font-size: .8rem;
+    padding-bottom: 1rem;
+}
+.title {
+    margin-bottom: 2rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.campo{
+    width: 80%;
+    text-align: center;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display SC', serif;
+    border-radius: 5px;
+    border: none;
+}
+.btnn {
+    margin: 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.671);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: .8em;
+    padding: 0.6em 1.2em;
+    background-color: #f0d376;
+    box-shadow: -2pX 2px 2px 0 rgba(0, 0, 0, 0.658);
+    
+}
+
+.btnn:hover {
+    
+    background-color: #5e6681;
+    color: #ffeba7;
+    box-shadow:  1px -1px 1px 0 rgba(255, 255, 255, 0.685);
+}
+   
+h1{
+    font-family: 'Playfair Display SC', serif;
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-img-top {
+    width: 100%;
+    max-width:18rem;
+    height: 10rem;
+    object-fit:contain;
+    padding-top: 1rem;
+} 
+
+main {
+    padding: 2rem 8rem;
+}
+.card-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card-text{
+    font-size: .8rem;
+}
+.card{
+    height: 20rem !important
+}
+
+.filtro{
+    background-color: #f5f5f5;
+    display: inline;
+}
+.ordenar{
+    display: flex;
+    justify-content: end;
+    padding: 0 0.75rem;
+    font-weight: bold;
+}
+select{
+    border: none;
+    background-color: transparent;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+select:hover{
+    font-weight: bold;
+}
+select:focus {
+    outline: none;
+  }
+
+.btn-compra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-carrito{
+    list-style-type:disc;
+}
+.total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: end;
+    padding-top: 2rem;
+    margin-bottom: 0;
+}
+.gracias_compra{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5rem 5rem 7rem 5rem;
+}
+.exito{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 1.5rem;
+    padding: 0 0 2rem 1rem;
+    
+}
