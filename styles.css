@@ -11,6 +11,8 @@ body {
     background-image:url(/imagenes/fondo.jpg);
 }
 
+
+
 .contenedor{
     display: flex;
     justify-content: center;
@@ -163,3 +165,4 @@ select:focus {
     padding: 0 0 2rem 1rem;
     
 }
+

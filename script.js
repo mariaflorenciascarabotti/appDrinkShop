@@ -1,31 +1,30 @@
-
-document.getElementById("disabled").style.display = "none";
+document.getElementById("verificado").style.display = "none";
 
 // FUNCIÓN para VERIFICAR EDAD a partir de la fecha de nacimiento.
-
 function verificarEdad() {
-    var fechaNacimiento = new Date(document.getElementById("fecha-nacimiento").value);
-    var fechaActual = new Date();
-    var anio = fechaActual.getFullYear() - fechaNacimiento.getFullYear();
-    var mes = fechaActual.getMonth() - fechaNacimiento.getMonth();
-    var dia = fechaActual.getDate() - fechaNacimiento.getDate();
+    let fechaNacimiento = new Date(document.getElementById("fecha-nacimiento").value);
+    let fechaActual = new Date();
+    let anio = fechaActual.getFullYear() - fechaNacimiento.getFullYear();
+    let mes = fechaActual.getMonth() - fechaNacimiento.getMonth();
+    let dia = fechaActual.getDate() - fechaNacimiento.getDate();
 
 // Verifica si el usuario tiene 18 años o más.
     if (anio>18 || (anio==18 && mes>=0 && dia >0)){
       document.getElementById("edad-form").style.display = "none";
-      document.getElementById("disabled").style.display = "block";
+      document.getElementById("verificado").style.display = "block";
     } else {
       alert("Lo siento, debes ser mayor de 18 años para acceder a esta tienda.");
     }
 }
 
 // Variables globales para almacenar los productos seleccionados y el monto total.
-
 var productosSeleccionados = [];
 var montoTotal = 0;
 var unidadesPorProducto = {};
 
 document.getElementById("carrito").style.display = "none";
+document.getElementById("carrito-option").style.display = "none";
+
  
 // Función para agregar un producto al carrito y calcular el monto total.
 function agregarAlCarrito(precio, nombreProducto) {
@@ -37,7 +36,10 @@ function agregarAlCarrito(precio, nombreProducto) {
       unidadesPorProducto[nombreProducto] = 1;
   }
   document.getElementById("carrito").style.display = "block";
-  // Actualiza la lista de productos en el carrito y el monto total en la página.
+  
+  document.getElementById("carrito-option").style.display = "block";
+  document.getElementById("carrito-vacio").style.display = "none";
+
   actualizarCarrito();
   actualizarContador();
 }
@@ -90,18 +92,8 @@ function finalizarCompra() {
   document.getElementById("carrito-option").style.display = "none";
   document.getElementById("mensaje-compra").style.display = "block";
 
-
   reiniciarCarrito();
 }
-
-
-
-
-
-
-
-
-
 
 
 //funcion para ordenar de mayor a menor
@@ -151,8 +143,9 @@ function ordenarTarjetas() {
     }
 };
 
-  
-  
+
+
+   
   
 
       
